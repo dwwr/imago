@@ -5,6 +5,7 @@
 - stand up repo
   - nextjs vite react frontend
     - with hello world
+      -fetch with response
   - node backend
     - returns hello world on load
     - no db (can extend with db during technical)
