@@ -2,17 +2,16 @@
 
 ### Task Breakdown
 
-- stand up repo
-  - nextjs vite react frontend
-    - with hello world
-      -fetch with response
-  - node backend
-    - returns hello world on load
-    - no db (can extend with db during technical)
-  - types - shared for now (can extend with distinct fe/be if needed during technical)
-  - storybook (basic)
-  - test suite (stand it up - can extend coverage in technical)
-  - everything spins up on “npm start”
+- stand up repo (2 hours)
+  - nextjs vite react frontend ✅
+    - with hello world ✅
+      -fetch with response ✅
+  - node backend ✅
+    - returns hello world on load ✅
+    - no db (can extend with db during technical) ✅
+  - types - shared for now (can extend with distinct fe/be if needed during technical) ✅
+  - storybook (basic) ✅
+  - everything spins up on “npm start” ✅
 - rnd storage methods
   - hold images in memory?
   - refresh on node FS API docs, write to fs?
