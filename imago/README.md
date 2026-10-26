@@ -1,0 +1,46 @@
+# imago
+
+### Task Breakdown
+
+- stand up repo
+  - nextjs vite react frontend
+    - with hello world
+  - node backend
+    - returns hello world on load
+    - no db (can extend with db during technical)
+  - types - shared for now (can extend with distinct fe/be if needed during technical)
+  - storybook (basic)
+  - test suite (stand it up - can extend coverage in technical)
+  - everything spins up on “npm start”
+- rnd storage methods
+  - hold images in memory?
+  - refresh on node FS API docs, write to fs?
+  - local storage?
+- API
+  - addImage
+  - getAllImages
+  - getlImagesByName
+  - deleteImage
+  - error handling
+- Frontend
+  - Uploader component
+    - Upload Button
+    - loading, error states
+  - List & ListItem components
+    - title (“x Images”)
+    - just shows images? (UI should also have image name, id, uploadedAt - later may want a eg. a DetailsCard in the List Item?)
+    - accommodate “delete” button
+    - loading, error, empty states
+  - Search bar
+    - no “search!” button - that means…
+    - search onChange of text input :)
+    - debounce before live technical :)
+- Styling
+  - fully custom or use design system
+  - basic responsiveness
+- stretch goals
+  - robust storybook
+  - api test coverage
+  - db on dev backend
+  - bells & whistles- animations?
+  - accessibility
