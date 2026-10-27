@@ -11,11 +11,11 @@
     - no db (can extend with db during technical) ✅
   - types - shared for now (can extend with distinct fe/be if needed during technical) ✅
   - everything spins up on “npm start” ✅
-- rnd storage methods
+- rnd storage methods (1 hour)
   - in memory?
   - fs?
   - use multer for fs, keep in-memory record "db" ✅
-- API
+- API (4 hours)
   - addImage ✅
   - getAllImages ✅
   - getlImagesByName ✅
