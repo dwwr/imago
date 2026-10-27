@@ -63,18 +63,24 @@ app.post(
 
 app.get("/getAllImages", async (req: Request, res: Response) => {
   const images: ImageList = await db.getAllImages();
+
+  res.status(200);
   res.json({ body: images });
 });
 
 app.get("/getImagesByName", async (req: Request, res: Response) => {
   const query: string = req.body;
   const images: ImageList = await db.getAllImagesByName(query);
+
+  res.status(200);
   res.json({ body: images });
 });
 
 app.delete("/deleteImage", async (req: Request, res: Response) => {
   const { id } = req.body;
   const dbRes = await db.deleteImage(id);
+
+  res.status(200);
   res.json({ body: "Image deleted" });
 });
 
