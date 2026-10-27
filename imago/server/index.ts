@@ -68,8 +68,8 @@ app.get("/getAllImages", async (req: Request, res: Response) => {
   res.json({ body: images });
 });
 
-app.get("/getImagesByName", async (req: Request, res: Response) => {
-  const query: string = req.body;
+app.post("/getImagesByName", async (req: Request, res: Response) => {
+  const query: string = req.body.query;
   const images: ImageCollection = await db.getAllImagesByName(query);
 
   res.status(200);
@@ -77,8 +77,8 @@ app.get("/getImagesByName", async (req: Request, res: Response) => {
 });
 
 app.delete("/deleteImage", async (req: Request, res: Response) => {
-  const { id } = req.body;
-  const dbRes = await db.deleteImage(id);
+  const { key } = req.body;
+  const dbRes = await db.deleteImage(key);
 
   res.status(200);
   res.json({ body: "Image deleted" });
