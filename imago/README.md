@@ -10,7 +10,6 @@
     - returns hello world on load ✅
     - no db (can extend with db during technical) ✅
   - types - shared for now (can extend with distinct fe/be if needed during technical) ✅
-  - storybook (basic) ✅
   - everything spins up on “npm start” ✅
 - rnd storage methods
   - hold images in memory?
@@ -44,3 +43,4 @@
   - db on dev backend
   - bells & whistles- animations?
   - accessibility
+  - safeguards- malware scan, file size & type limits
