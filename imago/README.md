@@ -12,15 +12,14 @@
   - types - shared for now (can extend with distinct fe/be if needed during technical) ✅
   - everything spins up on “npm start” ✅
 - rnd storage methods
-  - hold images in memory?
-  - refresh on node FS API docs, write to fs?
-  - local storage?
+  - in memory?
+  - fs?
+  - use multer for fs, keep in-memory record "db" ✅
 - API
-  - addImage
-  - getAllImages
-  - getlImagesByName
-  - deleteImage
-  - error handling
+  - addImage ✅
+  - getAllImages ✅
+  - getlImagesByName ✅
+  - deleteImage ✅
 - Frontend
   - Uploader component
     - Upload Button
@@ -31,18 +30,18 @@
     - accommodate “delete” button
     - loading, error, empty states
   - Search bar
-    - no “search!” button - that means…
-    - search onChange of text input :)
-    - debounce before live technical :)
+    - no “search!” button
+    - useEffect, onChange, etc
 - Styling
   - fully custom or use design system
   - basic responsiveness
 - stretch goals
   - image compression, thumbnails
   - robust storybook
+  - error handling
   - api test coverage
-  - db on dev backend
+  - db on backend
   - bells & whistles- animations?
   - accessibility
-  - safeguards- malware scan, file size & type limits
+  - safeguards- malware scan, file size & type limits, avoid collisions
   - image items should also have image name, id, uploadedAt - later may want a a DetailsCard in the List Item?
