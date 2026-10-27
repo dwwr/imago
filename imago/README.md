@@ -27,7 +27,7 @@
     - loading, error states
   - List & ListItem components
     - title (“x Images”)
-    - just shows images? (UI should also have image name, id, uploadedAt - later may want a eg. a DetailsCard in the List Item?)
+    - just shows images
     - accommodate “delete” button
     - loading, error, empty states
   - Search bar
@@ -38,9 +38,11 @@
   - fully custom or use design system
   - basic responsiveness
 - stretch goals
+  - image compression, thumbnails
   - robust storybook
   - api test coverage
   - db on dev backend
   - bells & whistles- animations?
   - accessibility
   - safeguards- malware scan, file size & type limits
+  - image items should also have image name, id, uploadedAt - later may want a a DetailsCard in the List Item?
