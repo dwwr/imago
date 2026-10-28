@@ -1,9 +1,12 @@
 # imago
 
+<img width="1092" height="819" alt="Screenshot 2026-10-27 at 8 02 04 PM" src="https://github.com/user-attachments/assets/392c43ed-913d-4040-8665-8ecc6062b90b" />
+
+
 npm i && npm start
 
 ###
-
+- **please note! App is not pre-populated with images- starting state is empty**
 - image CRUD app, it can:
   - CREATE image record
   - GET all image records
