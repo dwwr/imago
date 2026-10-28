@@ -3,7 +3,7 @@ import styles from "./Uploader.module.css";
 export const Uploader: React.FC<UploaderProps> = ({ onFileUpload }) => {
   return (
     <label className={styles.dropZone}>
-      Drop images here or click to upload.
+      Click to upload.
       <input
         className={styles.fileInput}
         type="file"
