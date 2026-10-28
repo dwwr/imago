@@ -6,8 +6,8 @@ export const ImageListItem: React.FC<ImageListItemProps> = ({
   image,
 }) => {
   return (
-    <div className={styles.container}>
-      <img onClick={() => handleDelete(image.name)} src={image.url} />
+    <div className={styles.container} onClick={() => handleDelete(image.url!)}>
+      <img src={image.url} />
     </div>
   );
 };

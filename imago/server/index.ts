@@ -47,14 +47,16 @@ app.post(
     const image = req.file;
     const { lastModified, name, size, type }: Image = req.body;
 
+    const url = `http://localhost:${port}/images/${image.filename}`;
+
     const payload = {
       lastModified,
       name,
       size,
       type,
-      url: `http://localhost:${port}/images/${image.filename}`,
+      url,
     };
-    const dbRes = await db.saveImage(image.originalname, payload);
+    const dbRes = await db.saveImage(url, payload);
 
     res.status(200);
     res.json({ url: dbRes.url });
