@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   font-family: inherit;
   background-color: inherit;
-  padding: 2rem 8rem;
+  padding: 2rem 16rem;
 }
 
 :root {
@@ -28,4 +28,10 @@ h1 {
 
 h2 {
   font-size: 24pt;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

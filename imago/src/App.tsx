@@ -41,11 +41,13 @@ function App() {
     <>
       <div>
         <h1>Image Uploader</h1>
-        <SearchInput
-          onChange={(e) => handleSearchImagesByName(e.target.value)}
-          value={searchQuery}
-        />
-        <Uploader onFileUpload={handleFileUpload} />
+        <div className="row">
+          <SearchInput
+            onChange={(e) => handleSearchImagesByName(e.target.value)}
+            value={searchQuery}
+          />
+          <Uploader onFileUpload={handleFileUpload} />
+        </div>
         <ImageList handleDelete={handleDelete} images={currentImages || []} />
       </div>
     </>
