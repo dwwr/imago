@@ -2,7 +2,7 @@ import express, { type Express, type Request, type Response } from "express";
 import multer from "multer";
 import cors from "cors";
 import bodyParser from "body-parser";
-import { Image, ImageList } from "../types/index.ts";
+import { Image, ImageCollection } from "../types/index.ts";
 import { ImageDB } from "./db.ts";
 
 const port = 3001;
@@ -62,23 +62,23 @@ app.post(
 );
 
 app.get("/getAllImages", async (req: Request, res: Response) => {
-  const images: ImageList = await db.getAllImages();
+  const images: ImageCollection = await db.getAllImages();
 
   res.status(200);
   res.json({ body: images });
 });
 
-app.get("/getImagesByName", async (req: Request, res: Response) => {
-  const query: string = req.body;
-  const images: ImageList = await db.getAllImagesByName(query);
+app.post("/getImagesByName", async (req: Request, res: Response) => {
+  const query: string = req.body.query;
+  const images: ImageCollection = await db.getAllImagesByName(query);
 
   res.status(200);
   res.json({ body: images });
 });
 
 app.delete("/deleteImage", async (req: Request, res: Response) => {
-  const { id } = req.body;
-  const dbRes = await db.deleteImage(id);
+  const { key } = req.body;
+  const dbRes = await db.deleteImage(key);
 
   res.status(200);
   res.json({ body: "Image deleted" });

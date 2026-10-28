@@ -6,7 +6,7 @@ export interface Image {
   url?: string;
 }
 
-export type ImageList = Image[];
+export type ImageCollection = Image[];
 
 export interface ImageDatabase {
   [key: string]: Image;

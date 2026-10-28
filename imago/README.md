@@ -11,34 +11,32 @@
     - no db (can extend with db during technical) ✅
   - types - shared for now (can extend with distinct fe/be if needed during technical) ✅
   - everything spins up on “npm start” ✅
-- rnd storage methods
-  - in memory?
-  - fs?
+- rnd storage methods (1 hour)
   - use multer for fs, keep in-memory record "db" ✅
-- API
+- API (4 hours)
   - addImage ✅
   - getAllImages ✅
   - getlImagesByName ✅
   - deleteImage ✅
-- Frontend
-  - Uploader component
-    - Upload Button
-    - loading, error states
-  - List & ListItem components
-    - title (“x Images”)
-    - just shows images
-    - accommodate “delete” button
-    - loading, error, empty states
+- Frontend (4 hours)
+  - client methods ✅
+  - Uploader component ✅
+    - Upload Button ✅
+  - List & ListItem components ✅
+    - title (“x Images”) ✅
+    - just shows images ✅
   - Search bar
-    - no “search!” button
-    - useEffect, onChange, etc
+    - no “search!” button ✅
+    - useEffect, onChange, etc ✅
 - Styling
+  - accommodate “delete” button, more info on ImageListItem
   - fully custom or use design system
-  - basic responsiveness
 - stretch goals
   - image compression, thumbnails
+  - basic responsiveness
   - robust storybook
-  - error handling
+  - robust error handling
+  - loading, error, empty states
   - api test coverage
   - db on backend
   - bells & whistles- animations?
