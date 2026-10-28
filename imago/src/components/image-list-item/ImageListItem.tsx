@@ -1,5 +1,6 @@
 import type { Image } from "../../../types";
 import styles from "./ImageListItem.module.css";
+import { TrashIcon } from "./TrashIcon";
 
 export const ImageListItem: React.FC<ImageListItemProps> = ({
   handleDelete,
@@ -7,7 +8,13 @@ export const ImageListItem: React.FC<ImageListItemProps> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <img onClick={() => handleDelete(image.name)} src={image.url} />
+      <img src={image.url} />
+      <button
+        className={styles.trashIcon}
+        onClick={() => handleDelete(image.url!)}
+      >
+        <TrashIcon />
+      </button>
     </div>
   );
 };
