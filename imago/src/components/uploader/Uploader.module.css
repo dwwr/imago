@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 150px;
   max-width: 100%;
-  height: 100px;
+  height: 75px;
   padding: 1em;
-  border: 1px solid #cccccc;
+  border: 1px solid;
   border-radius: 4px;
-  color: slategray;
   cursor: pointer;
+  background-color: white;
 }
 
 .fileInput {
