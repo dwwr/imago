@@ -1,5 +1,19 @@
 # imago
 
+npm i && npm start
+
+###
+
+- image CRUD app, it can:
+  - CREATE image record
+  - GET all image records
+  - GET image records by name
+  - DELETE an image record by name
+- only allows images (constrained via <input> tag attribute)
+- this took roughly 12 hours of dev time
+- NO AI assistance was used
+- please see Task Breakdown below
+
 ### Task Breakdown
 
 - stand up repo (2 hours)
@@ -35,6 +49,7 @@
 - Next Ups
   - add mocks/initial seed
   - image items should also have image name, id, uploadedAt etc.
+  - improve search (eg. ignore casing, ignore file extensions)
   - image compression, thumbnails
   - image sorting, order
   - basic responsiveness
