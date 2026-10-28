@@ -5,9 +5,16 @@ export const ImageList: React.FC<ImageListProps> = ({
   handleDelete,
   images,
 }) => {
-  return images.map((image, i) => {
-    return <ImageListItem handleDelete={handleDelete} image={image} key={i} />;
-  });
+  return (
+    <div>
+      <h2>{`${images.length} Images`}</h2>
+      {images.map((image, i) => {
+        return (
+          <ImageListItem handleDelete={handleDelete} image={image} key={i} />
+        );
+      })}
+    </div>
+  );
 };
 
 interface ImageListProps {
