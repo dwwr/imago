@@ -25,21 +25,25 @@
   - List & ListItem components ✅
     - title (“x Images”) ✅
     - just shows images ✅
-  - Search bar
+  - Search bar ✅
     - no “search!” button ✅
     - useEffect, onChange, etc ✅
-- Styling
-  - accommodate “delete” button, more info on ImageListItem
-  - fully custom or use design system
-- stretch goals
+- Styling (2 hours)
+  - style the page to my liking ✅
+  - accommodate “delete” button ✅
+  - fully custom or use design system (decision: custom, simple) ✅
+- Next Ups
+  - add mocks/initial seed
+  - image items should also have image name, id, uploadedAt etc.
   - image compression, thumbnails
+  - image sorting, order
   - basic responsiveness
-  - robust storybook
-  - robust error handling
-  - loading, error, empty states
-  - api test coverage
-  - db on backend
-  - bells & whistles- animations?
   - accessibility
-  - safeguards- malware scan, file size & type limits, avoid collisions
-  - image items should also have image name, id, uploadedAt - later may want a a DetailsCard in the List Item?
+  - error handling
+  - safeguards- eg. malware scan, file size & type limits, avoid collisions on db
+  - loading, error, empty UI states
+  - api test coverage
+  - storybook for components
+  - real db
+  - bells & whistles- animations?
+  - app strings, internationalization
