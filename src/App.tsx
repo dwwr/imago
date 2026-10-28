@@ -34,6 +34,7 @@ function App() {
   };
 
   React.useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     handleGetAllImages();
   }, []);
 

@@ -35,7 +35,7 @@ app.use(
   }),
 );
 
-app.get("/", (req: Request, res: Response) => {});
+app.get("/", () => {});
 
 app.post(
   "/addImage",
@@ -80,7 +80,7 @@ app.post("/getImagesByName", async (req: Request, res: Response) => {
 
 app.delete("/deleteImage", async (req: Request, res: Response) => {
   const { key } = req.body;
-  const dbRes = await db.deleteImage(key);
+  await db.deleteImage(key);
 
   res.status(200);
   res.json({ body: "Image deleted" });
