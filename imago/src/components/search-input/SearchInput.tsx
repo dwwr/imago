@@ -1,4 +1,5 @@
 import type { ChangeEvent } from "react";
+import styles from "./SearchInput.module.css";
 
 export const SearchInput: React.FC<SearchInputProps> = ({
   onChange,
@@ -6,12 +7,14 @@ export const SearchInput: React.FC<SearchInputProps> = ({
 }) => {
   return (
     <input
+      className={styles.searchInput}
       type="text"
       id="avatar"
       name="avatar"
       accept="image/*"
       onChange={onChange}
       value={value}
+      placeholder="Search Images..."
     />
   );
 };
