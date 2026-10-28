@@ -1,0 +1,31 @@
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: inherit;
+  background-color: inherit;
+  padding: 2rem 8rem;
+}
+
+:root {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #eef4f3;
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
