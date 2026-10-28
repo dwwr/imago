@@ -1,7 +1,6 @@
 # imago
 
-<img width="1092" height="819" alt="Screenshot 2026-10-27 at 8 02 04 PM" src="https://github.com/user-attachments/assets/392c43ed-913d-4040-8665-8ecc6062b90b" />
-
+<img width="1108" height="812" alt="Screenshot 2026-10-28 at 8 15 28 AM" src="https://github.com/user-attachments/assets/388b303c-a340-439b-ae66-68566a3774de" />
 
 npm i && npm start
 
