@@ -24,65 +24,49 @@ export class Client {
     };
 
     Object.entries(imageData).forEach((v) => {
-      formData.append(v[0], v[1] as any);
+      formData.append(v[0], v[1]);
     });
     formData.append("file", file);
 
-    try {
-      await fetch("http://localhost:3001/addImage", {
-        method: "POST",
-        body: formData,
-      });
-      await this.getAllImages();
-    } catch (err) {
-      throw err;
-    }
+    await fetch("http://localhost:3001/addImage", {
+      method: "POST",
+      body: formData,
+    });
+    await this.getAllImages();
   }
 
   async getAllImages() {
-    try {
-      const res = await fetch("http://localhost:3001/getAllImages");
-      const { body } = await res.json();
-      return body;
-    } catch (err) {
-      throw err;
-    }
+    const res = await fetch("http://localhost:3001/getAllImages");
+    const { body } = await res.json();
+    return body;
   }
 
   async getAllImagesByName(query: string) {
-    try {
-      const res = await fetch("http://localhost:3001/getImagesByName", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ query: query }),
-      });
-      const { body } = await res.json();
-      return body;
-    } catch (err) {
-      throw err;
-    }
+    const res = await fetch("http://localhost:3001/getImagesByName", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ query: query }),
+    });
+    const { body } = await res.json();
+    return body;
   }
 
   async deleteImageByName(name: string) {
-    try {
-      const res = await fetch("http://localhost:3001/deleteImage", {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ key: name }),
-      });
+    const res = await fetch("http://localhost:3001/deleteImage", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ key: name }),
+    });
 
-      if (!res.ok) {
-        throw new Error(`Failed to delete image. Server status: ${res.status}`);
-      }
-
-      const { body } = await res.json();
-      return body;
-    } catch (err) {
-      throw err;
+    if (!res.ok) {
+      throw new Error(`Failed to delete image. Server status: ${res.status}`);
     }
+
+    const { body } = await res.json();
+    return body;
   }
 }

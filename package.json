@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "concurrently -n server,client -c blue,magenta \"yarn start:server\" \"yarn dev\"",
+    "start": "concurrently -n server,client -c blue,magenta \"npm run start:server\" \"npm run dev\"",
     "start:server": "tsx watch server/index.ts"
   },
   "dependencies": {
